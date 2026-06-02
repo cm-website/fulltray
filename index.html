@@ -200,10 +200,12 @@
         .hero-award {
             position: absolute;
             display: inline-flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 0.55rem;
             width: clamp(120px, 13vw, 180px);
-            min-height: 72px;
+            min-height: 92px;
             padding: 0.85rem 1rem;
             border-radius: 20px;
             background: rgba(255, 255, 255, 0.92);
@@ -212,6 +214,21 @@
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
             pointer-events: auto;
+        }
+
+        .hero-award-winner {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.28rem 0.75rem;
+            border-radius: 999px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            line-height: 1;
         }
         
         .hero-award:hover {
@@ -1276,9 +1293,15 @@
         
             .hero-award {
                 width: 110px;
-                min-height: 58px;
+                min-height: 76px;
                 padding: 0.6rem 0.75rem;
                 border-radius: 16px;
+                gap: 0.4rem;
+            }
+
+            .hero-award-winner {
+                font-size: 0.68rem;
+                padding: 0.24rem 0.6rem;
             }
         
             .hero-award-left {
@@ -1324,9 +1347,11 @@
     <div class="hero-awards" aria-label="Fulltray awards">
         <a class="hero-award hero-award-left" href="https://www.congressionalappchallenge.us/25-NY01/" target="_blank" rel="noopener noreferrer" aria-label="Congressional App Challenge winner">
             <img src="images/congressional_app_challenge_logo.png" alt="Congressional App Challenge winner logo">
+            <span class="hero-award-winner">Winner</span>
         </a>
         <div class="hero-award hero-award-right" aria-label="IgniteCS Expo award">
             <img src="images/ignitecs_logo.png" alt="IgniteCS Expo winner logo">
+            <span class="hero-award-winner">Winner</span>
         </div>
     </div>
     <div class="hero-container">
