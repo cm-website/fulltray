@@ -958,6 +958,51 @@
             transform: translateY(-3px);
         }
 
+        .instagram-card {
+            margin-top: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            padding: 0.85rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            transition: all 0.3s ease;
+        }
+        
+        .instagram-card:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .instagram-card i {
+            font-size: 1.35rem;
+        }
+        
+        .instagram-card span {
+            font-weight: 600;
+        }
+        
+        .footer-qr {
+            margin-top: 1rem;
+        }
+        
+        .footer-qr img {
+            width: 120px;
+            max-width: 100%;
+            border-radius: 14px;
+            background: white;
+            padding: 0.4rem;
+        }
+        
+        .footer-qr p {
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
         .footer-column h4 {
             color: white;
             font-size: 1rem;
@@ -1194,6 +1239,7 @@
             <li><a href="#showcase">Gallery</a></li>
             <li><a href="#partners">Partners</a></li>
             <li><a href="#team">Team</a></li>
+            <li><a href="https://www.instagram.com/fulltrayinc/" target="_blank" rel="noopener noreferrer" aria-label="Fulltray Instagram"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#download" class="nav-cta">Download</a></li>
         </ul>
         <button class="mobile-toggle" id="mobileToggle">
@@ -1451,6 +1497,11 @@
                         <i class="fas fa-envelope"></i>
                         Contact Us
                     </a>
+
+                    <a href="https://www.instagram.com/fulltrayinc/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fab fa-instagram"></i>
+                        Follow on Instagram
+                    </a>
                 </div>
             </div>
         </div>
@@ -1534,12 +1585,19 @@
                 </div>
                 <p class="footer-description">Share food, reduce waste, and build a more compassionate community. Every
                     meal shared makes a difference.</p>
-<!--                <div class="footer-social">-->
-<!--                    <a href="#"><i class="fab fa-facebook-f"></i></a>-->
-<!--                    <a href="#"><i class="fab fa-twitter"></i></a>-->
-<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
-<!--                    <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
-<!--                </div>-->
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/fulltrayinc/" target="_blank" rel="noopener noreferrer" aria-label="Follow Fulltray on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <a class="instagram-card" href="https://www.instagram.com/fulltrayinc/" target="_blank" rel="noopener noreferrer" aria-label="Follow Fulltray on Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>@fulltrayinc</span>
+                </a>
+                <div class="footer-qr">
+                    <img src="images/fulltrayinc_qr.png" alt="Instagram QR code for @fulltrayinc">
+                    <p>Scan to follow us on Instagram</p>
+                </div>
             </div>
             <div class="footer-column">
                 <h4>Quick Links</h4>
