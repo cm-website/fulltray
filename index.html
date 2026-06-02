@@ -765,6 +765,38 @@
             margin-bottom: 1rem;
             line-height: 1.6;
         }
+
+        .partner-card li {
+            color: rgba(255, 255, 255, 0.78);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .partner-list-with-logos li {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+        
+        .partner-logo {
+            flex: 0 0 42px;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            object-fit: contain;
+            background: white;
+            padding: 0.35rem;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+        }
+        
+        .partner-info {
+            display: block;
+        }
+        
+        .partner-card li strong {
+            color: white;
+            font-weight: 600;
+        }
         
         .partner-card li strong {
             color: white;
@@ -1538,14 +1570,31 @@
             <div class="partner-groups">
                 <div class="partner-card fade-in">
                     <h3>Restaurants &amp; Bakeries</h3>
-                    <ul>
-                        <li><strong>Golden Buffet</strong> — <a href="https://www.centereachgoldenbuffet.com/" target="_blank" rel="noopener noreferrer">Centereach, NY</a></li>
-                        <li><strong>Sichuan Garden</strong> — <a href="https://sichuangarden736.com/" target="_blank" rel="noopener noreferrer">East Setauket, NY</a></li>
-                        <li><strong>Hirosaki</strong> — <a href="https://www.hirosakiny.com/" target="_blank" rel="noopener noreferrer">Stony Brook, NY</a></li>
-                        <li><strong>Curry Club</strong> — <a href="https://curryclubatsaghar.com/" target="_blank" rel="noopener noreferrer">Port Jefferson, NY</a></li>
-                        <li><strong>Lemonleaf Grill</strong> — <a href="http://www.lemonleafgrill.net/" target="_blank" rel="noopener noreferrer">Port Jefferson Station, NY</a></li>
-                        <li><strong>Rolling Pin Bakery</strong> — <a href="https://rollingpinbakery.com/" target="_blank" rel="noopener noreferrer">East Setauket, NY</a></li>
-                        <li><strong>Empire Ginger</strong> — <a href="https://www.yelp.com/biz/empire-ginger-smithtown/" target="_blank" rel="noopener noreferrer">Smithtown, NY</a></li>
+                    <ul class="partner-list-with-logos">
+                        <li>
+                            <img class="partner-logo" src="images/partners/golden-buffet-logo.png" alt="Golden Buffet logo">
+                            <span class="partner-info"><strong>Golden Buffet</strong> — <a href="https://www.centereachgoldenbuffet.com/" target="_blank" rel="noopener noreferrer">Centereach, NY</a></span>
+                        </li>
+                        <li>
+                            <img class="partner-logo" src="images/partners/sichuan-garden-logo.png" alt="Sichuan Garden logo">
+                            <span class="partner-info"><strong>Sichuan Garden</strong> — <a href="https://sichuangarden736.com/" target="_blank" rel="noopener noreferrer">East Setauket, NY</a></span>
+                        </li>
+                        <li>
+                            <img class="partner-logo" src="images/partners/hirosaki-logo.png" alt="Hirosaki logo">
+                            <span class="partner-info"><strong>Hirosaki</strong> — <a href="https://www.hirosakiny.com/" target="_blank" rel="noopener noreferrer">Stony Brook, NY</a></span>
+                        </li>
+                        <li>
+                            <img class="partner-logo" src="images/partners/curry-club-logo.png" alt="Curry Club logo">
+                            <span class="partner-info"><strong>Curry Club</strong> — <a href="https://curryclubatsaghar.com/" target="_blank" rel="noopener noreferrer">Port Jefferson, NY</a></span>
+                        </li>
+                        <li>
+                            <img class="partner-logo" src="images/partners/lemonleaf-grill-logo.png" alt="Lemonleaf Grill logo">
+                            <span class="partner-info"><strong>Lemonleaf Grill</strong> — <a href="http://www.lemonleafgrill.net/" target="_blank" rel="noopener noreferrer">Port Jefferson Station, NY</a></span>
+                        </li>
+                        <li>
+                            <img class="partner-logo" src="images/partners/rolling-pin-bakery-logo.png" alt="Rolling Pin Bakery logo">
+                            <span class="partner-info"><strong>Rolling Pin Bakery</strong> — <a href="https://rollingpinbakery.com/" target="_blank" rel="noopener noreferrer">East Setauket, NY</a></span>
+                        </li>
                     </ul>
                 </div>
 
@@ -1560,10 +1609,19 @@
 
                 <div class="partner-card fade-in">
                     <h3>Pantries</h3>
-                    <ul>
-                        <li><strong>St. James R.C. Church Pantry</strong> — <a href="https://www.stjamessetauket.org/" target="_blank" rel="noopener noreferrer">Setauket, NY</a></li>
-                        <li><strong>AGAPE Meals for Kids</strong> — <a href="https://agapemealsforkids.org/" target="_blank" rel="noopener noreferrer">Mt Sinai, NY</a></li>
-                        <li><strong>Hope House Ministries</strong> — <a href="https://www.hhm.org/" target="_blank" rel="noopener noreferrer">Port Jefferson, NY</a></li>
+                    <ul class="partner-list-with-logos">
+                        <li>
+                            <img class="partner-logo" src="images/partners/st-james-rc-church-logo.png" alt="St. James R.C. Church Pantry logo">
+                            <span class="partner-info"><strong>St. James R.C. Church Pantry</strong> — <a href="https://www.stjamessetauket.org/" target="_blank" rel="noopener noreferrer">Setauket, NY</a></span>
+                        </li>
+                        <li>
+                            <img class="partner-logo" src="images/partners/agape-meals-for-kids-logo.png" alt="AGAPE Meals for Kids logo">
+                            <span class="partner-info"><strong>AGAPE Meals for Kids</strong> — <a href="https://agapemealsforkids.org/" target="_blank" rel="noopener noreferrer">Mt Sinai, NY</a></span>
+                        </li>
+                        <li>
+                            <img class="partner-logo" src="images/partners/hope-house-ministries-logo.png" alt="Hope House Ministries logo">
+                            <span class="partner-info"><strong>Hope House Ministries</strong> — <a href="https://www.hhm.org/" target="_blank" rel="noopener noreferrer">Port Jefferson, NY</a></span>
+                        </li>
                     </ul>
                 </div>
             </div>
