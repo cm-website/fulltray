@@ -235,6 +235,15 @@
             transform: translateY(-4px);
             box-shadow: 0 24px 35px -15px rgb(0 0 0 / 0.35);
         }
+
+        .hero-award-ignite {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #334155 100%);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+        }
+        
+        .hero-award-ignite:hover {
+            box-shadow: 0 24px 35px -15px rgb(0 0 0 / 0.45), 0 0 0 1px rgba(16, 185, 129, 0.25);
+        }
         
         .hero-award-left {
             left: 2rem;
@@ -1347,11 +1356,11 @@
     <div class="hero-awards" aria-label="Fulltray awards">
         <a class="hero-award hero-award-left" href="https://www.congressionalappchallenge.us/25-NY01/" target="_blank" rel="noopener noreferrer" aria-label="Congressional App Challenge winner">
             <img src="images/congressional_app_challenge_logo.png" alt="Congressional App Challenge winner logo">
-            <span class="hero-award-winner">Winner</span>
+            <span class="hero-award-winner">🏆 Winner</span>
         </a>
-        <div class="hero-award hero-award-right" aria-label="IgniteCS Expo award">
+        <div class="hero-award hero-award-right hero-award-ignite" aria-label="IgniteCS Expo winner">
             <img src="images/ignitecs_logo.png" alt="IgniteCS Expo winner logo">
-            <span class="hero-award-winner">Winner</span>
+            <span class="hero-award-winner">🏆 Winner</span>
         </div>
     </div>
     <div class="hero-container">
