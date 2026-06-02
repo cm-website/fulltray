@@ -187,6 +187,53 @@
             opacity: 0.5;
         }
 
+        /* Hero award logos */
+        .hero-awards {
+            position: absolute;
+            top: 6.5rem;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+        
+        .hero-award {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(120px, 13vw, 180px);
+            min-height: 72px;
+            padding: 0.85rem 1rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: var(--shadow-xl);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            pointer-events: auto;
+        }
+        
+        .hero-award:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 35px -15px rgb(0 0 0 / 0.35);
+        }
+        
+        .hero-award-left {
+            left: 2rem;
+        }
+        
+        .hero-award-right {
+            right: 2rem;
+        }
+        
+        .hero-award img {
+            display: block;
+            max-width: 100%;
+            max-height: 72px;
+            object-fit: contain;
+        }
+        
         .hero-container {
             max-width: 1280px;
             margin: 0 auto;
@@ -1222,6 +1269,29 @@
                 gap: 1rem;
                 text-align: center;
             }
+
+            .hero-awards {
+                top: 5.75rem;
+            }
+        
+            .hero-award {
+                width: 110px;
+                min-height: 58px;
+                padding: 0.6rem 0.75rem;
+                border-radius: 16px;
+            }
+        
+            .hero-award-left {
+                left: 1rem;
+            }
+        
+            .hero-award-right {
+                right: 1rem;
+            }
+        
+            .hero-award img {
+                max-height: 56px;
+            }
         }
     </style>
 </head>
@@ -1250,6 +1320,15 @@
 
 <!-- Hero Section -->
 <section class="hero" id="home">
+
+    <div class="hero-awards" aria-label="Fulltray awards">
+        <a class="hero-award hero-award-left" href="https://www.congressionalappchallenge.us/25-NY01/" target="_blank" rel="noopener noreferrer" aria-label="Congressional App Challenge winner">
+            <img src="images/congressional_app_challenge_logo.png" alt="Congressional App Challenge winner logo">
+        </a>
+        <div class="hero-award hero-award-right" aria-label="IgniteCS Expo award">
+            <img src="images/ignitecs_logo.png" alt="IgniteCS Expo winner logo">
+        </div>
+    </div>
     <div class="hero-container">
         <div class="hero-content">
             <h1>Share Food,<br><span>Build Community</span></h1>
