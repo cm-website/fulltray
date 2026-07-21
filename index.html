@@ -6,7 +6,6 @@
     <meta name="description"
           content="Fulltray - Share food, reduce waste. Connect donors with those in need in your community.">
     <meta name="keywords" content="Fulltray, food sharing, reduce waste, community, donors, food donation">
-    <title>Fulltray - Share Food, Build Community</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -374,6 +373,27 @@
             box-shadow: var(--shadow-xl);
         }
 
+        .hero-video-wrapper {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 480px;
+            aspect-ratio: 16 / 9;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .hero-video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
         .floating-card {
             position: absolute;
             background: white;
@@ -550,48 +570,6 @@
         .about-feature span {
             font-weight: 500;
             color: var(--text-dark);
-        }
-
-        * Video Section */
-        .video-section {
-            background: var(--gradient-hero);
-            padding-top: 10rem;
-        }
-
-        .video-section .section-badge {
-            background: rgba(16, 185, 129, 0.2);
-            color: var(--primary);
-        }
-
-        .video-section .section-title,
-        .video-section .section-subtitle {
-            color: white;
-        }
-
-        .video-section .section-subtitle {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding-bottom: 50.625%; /* 16:9 of 900px */
-            max-height: 506px;
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: var(--shadow-xl);
-            border: 1px solid var(--border);
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
         }
         
         /* Features Section */
@@ -1426,26 +1404,6 @@
         </button>
     </div>
 </nav>
-
-<!-- Video Section -->
-<section class="video-section" id="video">
-    <div class="section-container">
-        <div class="section-header fade-in">
-            <span class="section-badge">Our Story</span>
-            <h2 class="section-title">Who We Are</h2>
-            <p class="section-subtitle">Watch how Fulltray connects surplus food with the neighbors who need it most.</p>
-        </div>
-        <div class="video-wrapper fade-in">
-            <iframe
-                src="https://www.youtube.com/embed/4jY5MMpvj7U?si=4vqByOK61Qa0EKPB"
-                title="Fulltray - Who We Are"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
     
 <!-- Hero Section -->
 <section class="hero" id="home">
@@ -1477,8 +1435,14 @@
             </div>
         </div>
         <div class="hero-visual">
-            <div class="phone-mockup">
-                <img src="images/app_images/Screenshot_20251210_093429.png" alt="Fulltray App">
+            <div class="hero-video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Fulltray - Who We Are"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
             </div>
             <div class="floating-card card-1">
                 <i class="fas fa-leaf"></i>
@@ -1856,7 +1820,6 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#video">Video</a></li>
                 </ul>
             </div>
             <div class="footer-column">
