@@ -554,9 +554,24 @@
 
         * Video Section */
         .video-section {
-            background: var(--bg-white);
+            background: var(--gradient-hero);
+            padding-top: 10rem;
         }
-        
+
+        .video-section .section-badge {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--primary);
+        }
+
+        .video-section .section-title,
+        .video-section .section-subtitle {
+            color: white;
+        }
+
+        .video-section .section-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
         .video-wrapper {
             position: relative;
             width: 100%;
@@ -569,7 +584,7 @@
             box-shadow: var(--shadow-xl);
             border: 1px solid var(--border);
         }
-        
+
         .video-wrapper iframe {
             position: absolute;
             top: 0;
@@ -1412,6 +1427,26 @@
     </div>
 </nav>
 
+<!-- Video Section -->
+<section class="video-section" id="video">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-badge">Our Story</span>
+            <h2 class="section-title">Who We Are</h2>
+            <p class="section-subtitle">Watch how Fulltray connects surplus food with the neighbors who need it most.</p>
+        </div>
+        <div class="video-wrapper fade-in">
+            <iframe
+                src="https://www.youtube.com/embed/4jY5MMpvj7U?si=4vqByOK61Qa0EKPB"
+                title="Fulltray - Who We Are"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+    
 <!-- Hero Section -->
 <section class="hero" id="home">
 
@@ -1538,26 +1573,6 @@
     </div>
 </section>
 -->
-
-<!-- Video Section -->
-<section class="video-section" id="video">
-    <div class="section-container">
-        <div class="section-header fade-in">
-            <span class="section-badge">Our Story</span>
-            <h2 class="section-title">Who We Are</h2>
-            <p class="section-subtitle">Watch how Fulltray connects surplus food with the neighbors who need it most.</p>
-        </div>
-        <div class="video-wrapper fade-in">
-            <iframe
-                src="https://www.youtube.com/embed/4jY5MMpvj7U?si=4vqByOK61Qa0EKPB"
-                title="Fulltray - Who We Are"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
 
 <!-- App Showcase Section -->
 <section class="showcase" id="showcase">
