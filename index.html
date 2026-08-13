@@ -636,6 +636,93 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* How It Works Section */
+        .how-it-works {
+            background: var(--bg-light);
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+        
+        .step-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .step-number {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .step-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.75rem;
+        }
+        
+        .step-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        .step-arrow {
+            display: none;
+        }
+        
+        .how-it-works-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+        
+        .how-it-works-flow span.flow-node {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.6rem 1.25rem;
+            border-radius: 50px;
+        }
+        
+        .how-it-works-flow i {
+            color: var(--text-light);
+        }
+        
+        @media (max-width: 900px) {
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
         
         /* Features Section */
         /*
@@ -1466,6 +1553,7 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#impact">Impact</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
             <!--<li><a href="#features">Features</a></li>-->
             <li><a href="#showcase">Gallery</a></li>
             <li><a href="#partners">Partners</a></li>
@@ -1600,6 +1688,41 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works" id="how-it-works">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-badge">How It Works</span>
+            <h2 class="section-title">From Surplus to Support</h2>
+            <p class="section-subtitle">Three simple steps connect local surplus food with the neighbors who need it.</p>
+        </div>
+        <div class="steps-grid fade-in">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Rescue</h3>
+                <p>Local restaurants, bakeries, and grocery stores donate safe surplus food.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Connect</h3>
+                <p>Fulltray coordinates pickups and volunteer deliveries through its community network and mobile platform.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Deliver</h3>
+                <p>Food is delivered directly to local pantries, soup kitchens, and community meal programs.</p>
+            </div>
+        </div>
+        <div class="how-it-works-flow fade-in">
+            <span class="flow-node">Food Donor</span>
+            <i class="fas fa-arrow-right"></i>
+            <span class="flow-node">Fulltray</span>
+            <i class="fas fa-arrow-right"></i>
+            <span class="flow-node">Community Food Program</span>
         </div>
     </div>
 </section>
@@ -1940,7 +2063,7 @@
             <div class="footer-column">
                 <ul>
                     <!--<li><a href="#features">Features</a></li>-->
-
+                    <li><a href="#how-it-works">How It Works</a></li>
                     <li><a href="#showcase">Gallery</a></li>
                 </ul>
             </div>
