@@ -723,6 +723,75 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Where the Food Goes Section */
+        .food-goes {
+            background: var(--bg-white);
+        }
+        
+        .food-goes-intro {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 3rem;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .food-goes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .food-goes-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.75rem 2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .food-goes-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+        
+        .food-goes-icon {
+            flex: 0 0 52px;
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+        }
+        
+        .food-goes-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.35rem;
+        }
+        
+        .food-goes-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .food-goes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
         
         /* Features Section */
         /*
@@ -1553,7 +1622,6 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#impact">Impact</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
             <!--<li><a href="#features">Features</a></li>-->
             <li><a href="#showcase">Gallery</a></li>
             <li><a href="#partners">Partners</a></li>
@@ -1966,6 +2034,50 @@
         </div>
     </div>
 </section>
+
+<!-- Where the Food Goes Section -->
+<section class="food-goes" id="food-goes">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-badge">Where the Food Goes</span>
+            <h2 class="section-title">Real Programs, Real Communities</h2>
+        </div>
+        <p class="food-goes-intro fade-in">
+            Our partner organizations serve dozens of local families and community members at each distribution
+            or meal program. Fulltray helps redirect surplus food into these existing community networks.
+        </p>
+        <div class="food-goes-grid fade-in">
+            <div class="food-goes-card">
+                <div class="food-goes-icon"><i class="fas fa-utensils"></i></div>
+                <div>
+                    <h3>Hope House Ministries</h3>
+                    <p>Weekly community dinner serving approximately 60–90 people</p>
+                </div>
+            </div>
+            <div class="food-goes-card">
+                <div class="food-goes-icon"><i class="fas fa-box-open"></i></div>
+                <div>
+                    <h3>Infant Jesus R.C. Church</h3>
+                    <p>Food pantry serving 60+ community members</p>
+                </div>
+            </div>
+            <div class="food-goes-card">
+                <div class="food-goes-icon"><i class="fas fa-bowl-food"></i></div>
+                <div>
+                    <h3>Welcome Friends Soup Kitchen</h3>
+                    <p>Community meal program serving approximately 30 families / 80 meals</p>
+                </div>
+            </div>
+            <div class="food-goes-card">
+                <div class="food-goes-icon"><i class="fas fa-people-roof"></i></div>
+                <div>
+                    <h3>Three Village Church</h3>
+                    <p>Food distribution serving 30+ families / approximately 100 people</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     
 <!-- Download Section -->
 <section class="download" id="download">
@@ -2070,8 +2182,8 @@
             <div class="footer-column">
                 <ul>
                     <li><a href="#download">Download</a></li>
-
                     <li><a href="#partners">Partners</a></li>
+                    <li><a href="#food-goes">Where the Food Goes</a></li>
                 </ul>
             </div>
 
