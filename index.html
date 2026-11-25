@@ -786,6 +786,14 @@
             font-size: 0.95rem;
             line-height: 1.6;
         }
+
+        @media (min-width: 769px) {
+            .food-goes-card:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                max-width: calc(50% - 0.75rem);
+                margin: 0 auto;
+            }
+        }
         
         @media (max-width: 768px) {
             .food-goes-grid {
@@ -2122,6 +2130,13 @@
                 <div>
                     <h3>AGAPE Meals for Kids</h3>
                     <p>Weekly food program providing 7-meal weekend bags to hundreds of food-insecure children</p>
+                </div>
+            </div>
+            <div class="food-goes-card">
+                <div class="food-goes-icon"><i class="fas fa-house"></i></div>
+                <div>
+                    <h3>Pax Christi Hospitality Center</h3>
+                    <p>25-bed emergency shelter for men over the age of 16, providing housing, meals, and support services</p>
                 </div>
             </div>
         </div>
